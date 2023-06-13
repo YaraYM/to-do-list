@@ -1,60 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;700&display=swap');
-
 :root {
-    --primary-color: rgb(17, 86, 102);
-    --primary-color-darker: rgb(9, 48, 56);
-}
-
-* {
-    box-sizing: border-box;
-    outline: 0;
+    --light-color: #7FBCAB; 
+    --medium-color: #29675B;
+    --dark-color: #2C4C40;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background: var(--primary-color);
-    font-family: 'Open sans', sans-serif;
-    font-size: 1.3em;
-    line-height: 1.5em;
+    background: var(--medium-color);
 }
 
 .container {
-    max-width: 640px;
-    margin: 50px auto;
+    align-items: center;
     background: #fff;
-    padding: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    min-height: 100px;
+    min-width: 450px;
+    padding: 2rem;
+     width: 40%;
 }
 
-form input, form label, form button {
-    display: block;
-    width: 100%;
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
     margin-bottom: 10px;
+    padding: 30px 0;
+    width: 70%;
 }
 
-form input {
-    font-size: 24px;
-    height: 50px;
-    padding: 0 20px;
+.input-tarefa {
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    height: 45px;
+    padding: 12px;
+    width: 50%;
 }
 
-form input:focus {
-    outline: 1px solid var(--primary-color);
+.input-tarefa:focus {
+    border: 2px solid var(--dark-color);
 }
 
-form button {
+.btn-tarefa {
+    background-color: var(--medium-color);
     border: none;
-    background: var(--primary-color);
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+    font-weight: 700;
+    height: 45px;
+    outline: none;   
+    position: relative;
+    width: 50%;
+}
+
+.btn-tarefa:hover {
+    background: var(--dark-color);
+}
+
+ul {
+    width: 70%;
+}
+
+li {
+    align-items: center;
+    background: #7FBCAB;
+    border: 1px solid #939697;
+    border-radius: 5px;
     color: #fff;
-    font-size: 18px;
+    display: flex;
+    font-size: 15px;
     font-weight: 700;
     height: 50px;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+}
+
+.apagar {
+    border: 1px solid #939697;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 30px;
+    padding: 1rem;
+    text-align: center;
 }
 
-form button:hover {
-    background: var(--primary-color-darker);
+.apagar:hover i {
+    transform: scale(1.1);
 }
-

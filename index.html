@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Lista de Tarefas</title>
+    
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- styles -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <section class="container">
-        <h1>Lorem ipsum dolor sit amet</h1>
+        <h1>Lista de tarefas</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quae optio natus aspernatur vel architecto impedit sunt corrupti aperiam qui, explicabo fugiat, praesentium asperiores esse inventore mollitia ipsam id autem.
+            <input type="text" class="input-tarefa" />
+            <button class="btn-tarefa">Adicionar</button>
         </p>
+
+        <ul class="tarefas"></ul>
     </section>
+
     
     <script src="./assets/js/main.js"></script>
 </body>
